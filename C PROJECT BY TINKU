@@ -1,0 +1,119 @@
+//QUIZ GAME
+TINKU 
+BATCH 73
+SAPID 590013738
+CODE IS 10 QUIZ EACH QUESTION HAVE POINT CORRECT HAVE 5 POINT AND WRONG HAVE 0 AND AT LAST SCORE WILL BE CALCULATED
+
+
+
+#include <stdio.h>
+
+int main() {
+    int score = 0;
+    int answer; 
+    printf("Welcome to the Quiz Game!\n");
+    printf("Each correct answer awards 5 points. No points for wrong answers.\n\n");
+
+    // Question 1
+    printf("Q1. What is the capital of France?\n");
+    printf("1. Berlin\n2. Madrid\n3. Paris\n4. Rome\n");
+    printf("Enter your answer (1-4): ");
+    scanf("%d", &answer);
+    if (answer == 3) {
+        score += 5;
+    }
+
+    // Question 2
+    printf("Q2. What is 5 + 3?\n");
+    printf("1. 6\n2. 8\n3. 9\n4. 7\n");
+    printf("Enter your answer (1-4): ");
+    scanf("%d", &answer);
+    if (answer == 2) {
+        score += 5;
+    }
+
+    // Question 3
+    printf("Q3. Which planet is known as the Red Planet?\n");
+    printf("1. Earth\n2. Mars\n3. Jupiter\n4. Venus\n");
+    printf("Enter your answer (1-4): ");
+    scanf("%d", &answer);
+    if (answer == 2) {
+        score += 5;
+    }
+
+    // Question 4
+    printf("Q4. Who wrote 'Romeo and Juliet'?\n");
+    printf("1. William Shakespeare\n2. Charles Dickens\n3. J.K. Rowling\n4. Mark Twain\n");
+    printf("Enter your answer (1-4): ");
+    scanf("%d", &answer);
+    if (answer == 1) {
+        score += 5;
+    }
+
+    // Question 5
+    printf("Q5. What is the largest ocean on Earth?\n");
+    printf("1. Atlantic Ocean\n2. Indian Ocean\n3. Pacific Ocean\n4. Arctic Ocean\n");
+    printf("Enter your answer (1-4): ");
+    scanf("%d", &answer);
+    if (answer == 3) {
+        score += 5;
+    }
+
+    // Question 6
+    printf("Q6. What is the square root of 64?\n");
+    printf("1. 6\n2. 7\n3. 8\n4. 9\n");
+    printf("Enter your answer (1-4): ");
+    scanf("%d", &answer);
+    if (answer == 3) {
+        score += 5;
+    }
+
+    // Question 7
+    printf("Q7. Which gas do plants use for photosynthesis?\n");
+    printf("1. Oxygen\n2. Carbon Dioxide\n3. Nitrogen\n4. Hydrogen\n");
+    printf("Enter your answer (1-4): ");
+    scanf("%d", &answer);
+    if (answer == 2) {
+        score += 5;
+    }
+
+    // Question 8
+    printf("Q8. How many continents are there on Earth?\n");
+    printf("1. 5\n2. 6\n3. 7\n4. 8\n");
+    printf("Enter your answer (1-4): ");
+    scanf("%d", &answer);
+    if (answer == 3) {
+        score += 5;
+    }
+
+    // Question 9
+    printf("Q9. What is the chemical symbol for water?\n");
+    printf("1. O2\n2. H2O\n3. CO2\n4. NaCl\n");
+    printf("Enter your answer (1-4): ");
+    scanf("%d", &answer);
+    if (answer == 2) {
+        score += 5;
+    }
+
+    // Question 10
+    printf("Q10. What is the speed of light?\n");
+    printf("1. 300,000 km/s\n2. 150,000 km/s\n3. 200,000 km/s\n4. 250,000 km/s\n");
+    printf("Enter your answer (1-4): ");
+    scanf("%d", &answer);
+    if (answer == 1) {
+        score += 5;
+    }
+
+    // Final score
+    printf("\nYour total score is: %d points\n", score);
+
+    if (score == 50) {
+        printf("Excellent! You got all answers correct.\n");
+    } else if (score >= 30) {
+        printf("Good job! You scored well.\n");
+    } else {
+        printf("Better luck next time!\n");
+    }
+
+    return 0;
+}
